@@ -10,7 +10,7 @@ export default function Profile({ name, tag, location, avatar, stats }) {
       className="avatar"
     />
     <p className="name">{name}</p>
-        <p className="tag">@{ tag}</p>
+        <p className="tag">{ tag}</p>
         <p className="location">{ location}</p>
   </div>
 
