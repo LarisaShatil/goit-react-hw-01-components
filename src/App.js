@@ -1,5 +1,5 @@
 import Profile from './components/Profile/Profile';
-import Statistics from './components/Statistics/Statistics';
+import Statistics from './components/Statistics';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import user from './components/Profile/user.json';
@@ -11,8 +11,9 @@ import './App.css';
 function App() {
   return (
     < div className="App">
-<h1>GOIT React homework1</h1>
-      <h2>👤Social Profile</h2>
+      <h1>GOIT React homework-1</h1>
+      <section>
+              <h2>1. Social Profile</h2>
       <Profile
   name={user.name}
   tag={user.tag}
@@ -20,14 +21,18 @@ function App() {
   avatar={user.avatar}
   stats={user.stats}
       />
-      <h2>📥Statistics</h2>
-      <Statistics title="Upload stats" stats={statisticalData}/>
+      </section>
+
+      <Statistics title="2. Upload stats" stats={statisticalData}/>
       
-      <h2>❤️Friend list</h2>
+      <section>
+      <h2>3. Friend list</h2>
       <FriendList friends={friends} />
-      
-      <h2>💸Transactions</h2>
+      </section>
+      <section>
+              <h2>4. Transactions 💸</h2>
       <TransactionHistory items={transactions} />
+      </section>
       
     </div>
   );

@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import { StatisticsItem } from '../StatisticsItem/StatisticsItem';
+import s from './StatisticsList.module.css';
 
 export default function StatisticsList({ stats }) {
   return (
-      <ul className="stat-list">
+      <ul className={s.statList}>
         
           {stats.map(item => (
-            <li className="item" key={item.id}>
+            <li className={s.item} key={item.id}>
           <StatisticsItem
             id={item.id}
             label={item.label}

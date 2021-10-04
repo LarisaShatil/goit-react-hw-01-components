@@ -1,0 +1,26 @@
+.img {
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(13, 80, 13);
+  margin: 0 5px;
+}
+
+.active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(187, 27, 27);
+  margin: 0 5px;
+}
